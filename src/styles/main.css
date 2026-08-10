@@ -1,9 +1,9 @@
-@import "./variables.css";
-@import "./reset.css";
-@import "./header.css";
-@import "./hero.css";
-/* @import "./about.css"; */
-@import "./portfolio.css";
-@import "./pricing.css";
-@import "./faq.css";
-@import "./form.css";
+@import "/src/styles/variables.css";
+@import "/src/styles/reset.css";
+@import "/src/styles/hero.css";
+@import "/src/styles/about.css";
+@import "/src/styles/portfolio.css";
+@import "/src/styles/pricing.css";
+@import "/src/styles/faq.css";
+@import "/src/styles/form.css";
+@import "/src/styles/footer.css";
