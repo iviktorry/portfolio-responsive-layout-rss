@@ -1,1 +1,74 @@
 @import "/src/styles/variables.css";
+
+.hero__body,
+.nav {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .header__burger-btn {
+    background: inherit;
+    border: 0;
+  }
+}
+
+.hero {
+  background: var(--color-grey);
+  color: var(--color-white);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  padding: 3.75rem 1.25rem;
+}
+
+.hero__group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .hero__stats {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 3.75rem; */
+
+    .hero__stats-num {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .hero__num {
+        font-size: 3rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .hero__heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+}
+
+.hero__gallery {
+}
+
+.hero__gallery > img:nth-child(1) {
+  display: none;
+}
+
+.hero__bio {
+  .hero__scroll {
+    display: none;
+  }
+
+  .hero__author {
+    width: 13.75rem;
+    justify-self: end;
+    text-align: right;
+  }
+}
