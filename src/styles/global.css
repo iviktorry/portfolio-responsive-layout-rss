@@ -36,6 +36,13 @@ h3 {
   font-family: "Oswald", sans-serif;
   color: var(--color-white);
   background: var(--color-grey);
+  border: 0;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background: var(--color-red);
+  }
 }
 
 li {
@@ -57,7 +64,7 @@ img {
 
 .badge {
   margin-bottom: 2.5rem;
-  
+
   > h2 {
     margin-bottom: 0.75rem;
   }

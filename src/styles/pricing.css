@@ -45,3 +45,13 @@
     gap: 3.75rem;
   }
 }
+
+@media (hover: hover) {
+  .price-card:hover {
+    border: 1px solid var(--color-red);
+
+    .price-card__btn {
+      background: var(--color-red);
+    }
+  }
+}
