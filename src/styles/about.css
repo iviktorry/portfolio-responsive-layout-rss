@@ -1,4 +1,3 @@
 .about img {
-    height: 340px;
-    width: 340px;
+  max-width: 100%;
 }

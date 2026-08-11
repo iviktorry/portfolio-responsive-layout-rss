@@ -22,15 +22,16 @@
 }
 
 .hero__wrapper {
-  padding: 3.75rem 1.25rem;
   display: flex;
-  gap: 1.25rem;
   flex-direction: column;
+  gap: 1.25rem;
+  padding: 3.75rem 1.25rem;
 }
 
 .hero__column-left {
   display: flex;
   flex-direction: column;
+  width: auto;
 
   .hero__name {
     display: flex;
@@ -39,8 +40,7 @@
 
     .hero__stats {
       display: flex;
-      justify-content: space-between;
-      /* gap: 3.75rem; */
+      gap: 3.75rem;
 
       .hero__stats-item {
         display: flex;
@@ -75,7 +75,7 @@
   align-items: end;
   gap: 3.75rem;
 
-  .hero__img-left {
+  .hero__img-right {
     height: 18.375rem;
     width: auto;
   }
@@ -84,5 +84,107 @@
     width: 13.75rem;
     justify-self: end;
     text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    > span {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+
+    .hero__line {
+      flex: 1;
+      width: 1px;
+      border-left: 1px solid var(--color-white);
+    }
+  }
+
+  .hero__wrapper {
+    flex-direction: row;
+  }
+
+  .hero__column-left {
+    margin-top: 6.25rem;
+    padding-left: 1.25rem;
+    /* justify-content: space-between; */
+
+    .hero__name {
+      .hero__heading {
+        font-size: 4.25rem;
+      }
+    }
+
+    .hero__scroll {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 10rem;
+    }
+  }
+
+  .hero__column-right {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    .nav {
+      display: block;
+
+      .nav__list {
+        display: flex;
+
+        .nav__item {
+          padding: 1.125rem 1.25rem;
+
+          .nav__link {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+    .header__burger-btn {
+      display: none;
+    }
+  }
+
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto 17.5rem;
+    gap: 2.5rem;
+  }
+
+  .hero__column-left {
+    padding-left: 0;
+
+    .hero__name {
+      .hero__heading {
+        font-size: 7.25rem;
+      }
+    }
+  }
+
+  .hero__column-center {
+    display: flex;
+    align-self: center;
+    height: 13.75rem;
+    width: auto;
+  }
+
+  .hero__column-right {
+    .hero__img-right {
+      height: 23.375rem;
+      width: 17.5rem;
+    }
   }
 }

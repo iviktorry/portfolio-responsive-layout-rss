@@ -5,6 +5,7 @@
 
 body {
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   font-weight: 400;
   max-width: 100%;
   overflow-x: hidden;
@@ -12,6 +13,7 @@ body {
 
 .text {
   font-family: "Mulish", sans-serif;
+  text-transform: none;
   font-size: 1rem;
 }
 
