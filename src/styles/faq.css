@@ -14,7 +14,11 @@
 .accordion {
   .accordion__item {
     .accordion__question {
-      padding: 1.125rem;
+      padding: 1.125rem 0;
+    }
+
+    .accordion__answer {
+      line-height: 24px;
     }
   }
 }

@@ -1,0 +1,14 @@
+.book-form__label {
+  margin-bottom: 1.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  .form__input {
+    height: 60px;
+    border: 1px solid var(--color-grey);
+    padding: 0.75rem;
+  }
+}
