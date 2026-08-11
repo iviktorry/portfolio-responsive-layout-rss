@@ -188,3 +188,15 @@
     }
   }
 }
+
+@media (hover: hover) {
+  .header {
+    .nav {
+      .nav__item:hover {
+        .nav__link {
+          color: var(--color-red);
+        }
+      }
+    }
+  }
+}
