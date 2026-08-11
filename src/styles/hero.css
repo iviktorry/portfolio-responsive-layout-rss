@@ -115,7 +115,7 @@
   .hero__column-left {
     margin-top: 6.25rem;
     padding-left: 1.25rem;
-    /* justify-content: space-between; */
+    flex: 1;
 
     .hero__name {
       .hero__heading {
