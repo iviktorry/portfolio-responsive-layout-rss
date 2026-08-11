@@ -2,8 +2,8 @@
 @import "/src/styles/global.css";
 
 .pricing__cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1.25rem;
   padding: 0.625rem;
 }
@@ -28,5 +28,12 @@
   }
   .price-card__price {
     flex: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing__cards {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2.125rem;
   }
 }
