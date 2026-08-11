@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
   .book-form__label {
     text-align: center;
   }
@@ -36,6 +36,14 @@
     justify-content: center;
     .form__input {
       max-width: 23.75rem;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .form {
+    .form__input:hover {
+      border: 1px solid var(--color-red);
     }
   }
 }
