@@ -1,0 +1,20 @@
+@import "/src/styles/variables.css";
+@import "/src/styles/global.css";
+
+.faq {
+  background: var(--color-grey);
+  color: var(--color-white);
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  .accordion__item {
+    .accordion__question {
+      padding: 1.125rem;
+    }
+  }
+}
