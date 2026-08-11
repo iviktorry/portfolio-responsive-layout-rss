@@ -21,4 +21,31 @@
       line-height: 24px;
     }
   }
+
+  .accordion__line {
+    height: 1px;
+    border-top: 0.5px solid var(--color-white);
+  }
+}
+
+@media (min-width: 1440px) {
+  .faq__content {
+    flex-direction: row;
+    gap: 2.5rem;
+
+    .faq__badge,
+    .accordion {
+      flex: 1;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .accordion {
+    .accordion__item {
+      .accordion__question:hover {
+        color: var(--color-red);
+      }
+    }
+  }
 }

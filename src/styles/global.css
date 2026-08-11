@@ -59,6 +59,14 @@ li {
   color: var(--color-white);
 }
 
+@media (hover: hover) {
+  .nav__item:hover {
+    .link {
+      color: var(--color-red);
+    }
+  }
+}
+
 .wrapper {
   padding: 3.75rem 1.25rem;
 }
