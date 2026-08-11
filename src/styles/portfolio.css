@@ -12,10 +12,6 @@
 
 .portfolio__badge {
   padding: 0 1.25rem;
-  margin-bottom: 2.5rem;
-  > h2 {
-    margin-bottom: 0.75rem;
-  }
 }
 
 .portfolio__viewport {
@@ -29,9 +25,8 @@
   display: flex;
   gap: 1.25rem;
   height: 40.875rem;
-  margin: 0 2rem;
   width: max-content;
-  margin: 0 1.25rem;
+  padding: 0 1.25rem;
 
   .portfolio__img {
     scroll-snap-align: center;
@@ -74,6 +69,13 @@
     align-self: center;
   }
 }
+
+/* .portfolio__slider::before {
+  content: "";
+  display: block;
+  width: 1.25rem;
+  flex-shrink: 0;
+} */
 
 @media (min-width: 768px) {
 }

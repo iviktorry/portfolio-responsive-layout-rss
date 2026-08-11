@@ -54,3 +54,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.badge {
+  margin-bottom: 2.5rem;
+  
+  > h2 {
+    margin-bottom: 0.75rem;
+  }
+}
