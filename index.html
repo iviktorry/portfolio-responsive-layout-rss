@@ -10,9 +10,11 @@
   <body>
     <main>
       <section class="hero">
-        <!-- <div class="wrapper"> -->
         <header class="header">
-          <img src="./src/assets/logo.svg" class="header__logo" alt="logo" />
+          <a href="#" class="header__logo-link">
+            <img src="./src/assets/logo.svg" class="header__logo" alt="logo" />
+          </a>
+
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -32,6 +34,7 @@
               </li>
             </ul>
           </nav>
+
           <button class="header__burger-btn">
             <img
               src="./src/assets/burger-btn.svg"
@@ -41,44 +44,30 @@
           </button>
         </header>
 
-        <div class="hero__body">
+        <div class="hero__wrapper">
           <aside class="hero__aside">
             <span>2025</span>
             <div class="hero__line"></div>
             <span>Best Photographer by MAX</span>
           </aside>
-        </div>
 
-        <div class="hero__content">
-          <div class="hero__group">
-            <div class="hero__stats">
-              <div class="hero__stats-num">
-                <p class="hero__num">+487</p>
-                <p class="hero__text text">Photo sessions</p>
+          <div class="hero__column-left">
+            <div class="hero__name">
+              <div class="hero__stats">
+                <div class="hero__stats-item">
+                  <p class="hero__stats-num">+487</p>
+                  <p class="hero__stats-text text">Photo sessions</p>
+                </div>
+                <div class="hero__stats-item">
+                  <p class="hero__stats-num">+356</p>
+                  <p class="hero__stats-text text">Satisfied clients</p>
+                </div>
               </div>
-              <div class="hero__stats-num">
-                <p class="hero__num">+356</p>
-                <p class="hero__text text">Satisfied clients</p>
-              </div>
+
+              <h1 class="hero__heading">Professional Photographer</h1>
+              <h3 class="hero__label">Capture the moment. Tell your story.</h3>
             </div>
-            <h1 class="hero__heading">Professional Photographer</h1>
-            <h3 class="hero__label">Capture the moment. Tell your story.</h3>
-          </div>
 
-          <div class="hero__gallery">
-            <img
-              src="./src/assets/hero-1.svg"
-              class="hero__img"
-              alt="author photo"
-            />
-            <img
-              src="./src/assets/hero-2.svg"
-              class="hero__img"
-              alt="author photo"
-            />
-          </div>
-
-          <div class="hero__bio">
             <p class="hero__scroll text">
               Scroll down
               <img
@@ -87,13 +76,29 @@
                 alt="arrow down"
               />
             </p>
+          </div>
+
+          <div class="hero__column-center">
+            <img
+              src="./src/assets/hero-1.svg"
+              class="hero__img-center"
+              alt="author photo"
+            />
+          </div>
+
+          <div class="hero__column-right">
+            <img
+              src="./src/assets/hero-2.svg"
+              class="hero__img-left"
+              alt="author photo"
+            />
+
             <p class="hero__author text">
               Hi! I'm Vera, a photographer. For me, photography is more than
               just an image.
             </p>
           </div>
         </div>
-        <!-- </div> -->
       </section>
 
       <section class="about">
@@ -441,24 +446,28 @@
       </section>
 
       <section class="book-form">
-        <h3 class="book-form__label">Like my portfolio? Sign up for a shot!</h3>
-        <form class="form">
-          <input
-            type="text"
-            class="form__input"
-            name="name"
-            id="name"
-            placeholder="Your name"
-          />
-          <input
-            type="tel"
-            class="form__input"
-            name="number"
-            id="number"
-            value="+1"
-          />
-          <button class="form__btn btn">Book Now</button>
-        </form>
+        <div class="wrapper">
+          <h3 class="book-form__label">
+            Like my portfolio? Sign up for a shot!
+          </h3>
+          <form class="form">
+            <input
+              type="text"
+              class="form__input"
+              name="name"
+              id="name"
+              placeholder="Your name"
+            />
+            <input
+              type="tel"
+              class="form__input"
+              name="number"
+              id="number"
+              value="+1"
+            />
+            <button class="form__btn btn">Book Now</button>
+          </form>
+        </div>
       </section>
 
       <footer class="footer">
