@@ -146,10 +146,6 @@
 
         .nav__item {
           padding: 1.125rem 1.25rem;
-
-          .nav__link {
-            color: var(--color-white);
-          }
         }
       }
     }
