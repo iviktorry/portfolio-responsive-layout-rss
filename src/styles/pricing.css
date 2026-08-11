@@ -37,3 +37,11 @@
     padding: 0 2.125rem;
   }
 }
+
+@media (min-width: 1440px) {
+  .pricing__cards {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    gap: 3.75rem;
+  }
+}
