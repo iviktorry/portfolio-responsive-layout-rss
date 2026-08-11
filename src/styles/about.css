@@ -18,8 +18,6 @@
         margin-bottom: 0.75rem;
       }
     }
-
-
   }
 
   .about__card:nth-child(3) {
@@ -27,6 +25,20 @@
       display: none;
     }
   }
+}
 
-  
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+  .about__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .about__card:nth-child(3) {
+      > img {
+        display: flex;
+      }
+    }
+  }
 }
