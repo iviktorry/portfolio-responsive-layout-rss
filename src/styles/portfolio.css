@@ -19,15 +19,19 @@
 }
 
 .portfolio__viewport {
-    overflow-x: auto;
-  }
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
 
 .portfolio__slider {
   display: flex;
   gap: 1.25rem;
   height: 40.875rem;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+  margin: 0 2rem;
+  width: max-content;
+  margin: 0 1.25rem;
 
   .portfolio__img {
     scroll-snap-align: center;
@@ -35,7 +39,6 @@
 
   .portfolio__img:nth-child(1) {
     align-self: flex-end;
-    margin-left: 1.25rem;
   }
   .portfolio__img:nth-child(2) {
     align-self: center;
@@ -69,7 +72,6 @@
   }
   .portfolio__img:nth-child(12) {
     align-self: center;
-    margin-right: 1.25rem;
   }
 }
 
