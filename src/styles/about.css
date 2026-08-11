@@ -1,3 +1,32 @@
-.about img {
-  max-width: 100%;
+@import "/src/styles/variables.css";
+@import "/src/styles/global.css";
+
+.about__cards,
+.about__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.about__cards {
+  .about__card {
+    .about__img {
+      width: 100%;
+    }
+
+    .about__badge {
+      > h2 {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+
+  }
+
+  .about__card:nth-child(3) {
+    > img {
+      display: none;
+    }
+  }
+
+  
 }
