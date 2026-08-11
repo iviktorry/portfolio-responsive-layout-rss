@@ -18,48 +18,72 @@
   }
 }
 
+.portfolio__viewport {
+    overflow-x: auto;
+  }
+
 .portfolio__slider {
   display: flex;
   gap: 1.25rem;
-  overflow-x: hidden;
   height: 40.875rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  .portfolio__img {
+    scroll-snap-align: center;
+  }
+
+  .portfolio__img:nth-child(1) {
+    align-self: flex-end;
+    margin-left: 1.25rem;
+  }
+  .portfolio__img:nth-child(2) {
+    align-self: center;
+  }
+  .portfolio__img:nth-child(3) {
+    align-self: center;
+  }
+  .portfolio__img:nth-child(4) {
+    align-self: flex-start;
+  }
+  .portfolio__img:nth-child(5) {
+    align-self: center;
+  }
+  .portfolio__img:nth-child(6) {
+    align-self: center;
+  }
+  .portfolio__img:nth-child(7) {
+    align-self: flex-start;
+  }
+  .portfolio__img:nth-child(8) {
+    align-self: flex-end;
+  }
+  .portfolio__img:nth-child(9) {
+    align-self: center;
+  }
+  .portfolio__img:nth-child(10) {
+    align-self: flex-start;
+  }
+  .portfolio__img:nth-child(11) {
+    align-self: center;
+  }
+  .portfolio__img:nth-child(12) {
+    align-self: center;
+    margin-right: 1.25rem;
+  }
 }
 
-.portfolio__img:nth-child(1) {
-  align-self: flex-end;
-  margin-left: 1.25rem;
+@media (min-width: 768px) {
 }
-.portfolio__img:nth-child(2) {
-  align-self: center;
-}
-.portfolio__img:nth-child(3) {
-  align-self: center;
-}
-.portfolio__img:nth-child(4) {
-  align-self: flex-start;
-}
-.portfolio__img:nth-child(5) {
-  align-self: center;
-}
-.portfolio__img:nth-child(6) {
-  align-self: center;
-}
-.portfolio__img:nth-child(7) {
-  align-self: flex-start;
-}
-.portfolio__img:nth-child(8) {
-  align-self: flex-end;
-}
-.portfolio__img:nth-child(9) {
-  align-self: center;
-}
-.portfolio__img:nth-child(10) {
-  align-self: flex-start;
-}
-.portfolio__img:nth-child(11) {
-  align-self: center;
-}
-.portfolio__img:nth-child(12) {
-  align-self: center;
-  margin-right: 1.25rem;
+
+@media (min-width: 1440px) {
+  .portfolio__viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .portfolio__slider {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+  }
 }
