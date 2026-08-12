@@ -73,13 +73,6 @@
   }
 }
 
-/* .portfolio__slider::before {
-  content: "";
-  display: block;
-  width: 1.25rem;
-  flex-shrink: 0;
-} */
-
 @media (min-width: 768px) {
 }
 
@@ -87,10 +80,10 @@
   .portfolio__viewport {
     overflow: hidden;
     width: 100%;
+    scroll-snap-type: none;
   }
 
   .portfolio__slider {
     will-change: transform;
-    transition: transform 0.1s ease-out;
   }
 }
