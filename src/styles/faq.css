@@ -12,15 +12,35 @@
 }
 
 .accordion {
+  /* details */
   .accordion__item {
+    .accordion__question::-webkit-details-marker {
+      display: none;
+    }
+    /* summary */
     .accordion__question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
       padding: 1.125rem 0;
+      cursor: pointer;
     }
 
     .accordion__answer {
       line-height: 24px;
       padding-bottom: 1.25rem;
     }
+
+    .accordion__question::after {
+      content: url(/src/assets/plus.svg);
+      height: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  .accordion__item[open] .accordion__question::after {
+    transform: rotate(45deg);
   }
 
   .accordion__line {
