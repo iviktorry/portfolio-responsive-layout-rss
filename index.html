@@ -11,11 +11,31 @@
     <main>
       <section class="hero">
         <header class="header">
-          <a href="#" class="header__logo-link">
-            <img src="./src/assets/logo.svg" class="header__logo" alt="logo" />
-          </a>
+          <div class="header__controls">
+            <a href="#" class="header__logo-link">
+              <img
+                src="./src/assets/logo.svg"
+                class="header__logo"
+                alt="logo"
+              />
+            </a>
+            <button class="header__burger-btn">
+              <img
+                src="./src/assets/burger-btn.svg"
+                class="header__burger-img"
+                alt="menu button"
+              />
+            </button>
+            <button class="header__exit-btn hidden">
+              <img
+                src="./src/assets/exit.svg"
+                class="header__exit-img"
+                alt="exit button"
+              />
+            </button>
+          </div>
 
-          <nav class="nav">
+          <nav class="nav" id="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#about" class="nav__link link">about me</a>
@@ -34,14 +54,6 @@
               </li>
             </ul>
           </nav>
-
-          <button class="header__burger-btn">
-            <img
-              src="./src/assets/burger-btn.svg"
-              class="header__burger-img"
-              alt="menu button"
-            />
-          </button>
         </header>
 
         <div class="hero__wrapper">
