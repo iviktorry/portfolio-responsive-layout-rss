@@ -30,6 +30,7 @@
 
   .portfolio__img {
     scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 
   .portfolio__img:nth-child(1) {
@@ -49,9 +50,11 @@
   }
   .portfolio__img:nth-child(6) {
     align-self: center;
+    scroll-snap-align: end;
   }
   .portfolio__img:nth-child(7) {
     align-self: flex-start;
+    scroll-snap-align: start;
   }
   .portfolio__img:nth-child(8) {
     align-self: flex-end;
